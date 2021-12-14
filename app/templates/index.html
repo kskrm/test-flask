@@ -14,6 +14,10 @@
         {% for word in team %}
         <p>{{word}}</p>
         {% endfor %}
+        <form action="/index" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="submit" value="Submit">
+        </form>
         <img src="/static/images/madridvsatletico.jpg" alt="madridderby">
     </body>
 </html>

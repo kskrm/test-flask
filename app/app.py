@@ -10,6 +10,11 @@ def index():
     team = ["Real Madrid","Manchester United","FC Barcelona","Manchester City"]
     return render_template("index.html",name=name, team=team)
 
+@app.route("/index",methods=["post"])
+def post():
+    name = request.form["name"]
+    team = ["Real Madrid","Manchester United","FC Barcelona","Manchester City"]
+    return render_template("index.html", name=name, team=team)
 
 if __name__ == "__main__":
     app.run(debug=True)
