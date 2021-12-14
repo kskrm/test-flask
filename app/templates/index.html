@@ -4,7 +4,13 @@
         <title>{{name}}</title>
     </head>
     <body>
-    <h1>Football</h1>
-    <img src="/static/images/madridvsatletico.jpg" alt="madridderby">
+        {% if name == "keisuke" %}
+        <h1>{{name}}'s special page</h1>
+        {% elif name %}
+        <h1>{{name}}'s page</h1>
+        {% else %}
+        <h1>page</h1>
+        {% endif %}
+        <img src="/static/images/madridvsatletico.jpg" alt="madridderby">
     </body>
 </html>
