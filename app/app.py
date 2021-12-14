@@ -7,7 +7,8 @@ app = Flask(__name__)
 @app.route("/index")
 def index():
     name = request.args.get("name")
-    return render_template("index.html",name=name)
+    team = ["Real Madrid","Manchester United","FC Barcelona","Manchester City"]
+    return render_template("index.html",name=name, team=team)
 
 
 if __name__ == "__main__":

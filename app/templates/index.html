@@ -11,6 +11,9 @@
         {% else %}
         <h1>page</h1>
         {% endif %}
+        {% for word in team %}
+        <p>{{word}}</p>
+        {% endfor %}
         <img src="/static/images/madridvsatletico.jpg" alt="madridderby">
     </body>
 </html>
